@@ -1,0 +1,192 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  /* height: 100vh; */
+  gap: 32px;
+  background-image: url("proBg.jpg");
+  background-size: 100% 100%;
+}
+#productHead {
+  background: -webkit-linear-gradient(#000000, #5100ff, #ffffff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-family: monospace;
+  font-style: italic;
+  font-size: 38px;
+}
+
+#cardDiv {
+  width: 328px;
+  height: 442px;
+  display: flex;
+  flex-direction: column;
+  padding-left: 28px;
+  padding-top: 18px;
+  gap: 12px;
+  background: #ffffff;
+  border-radius: 8px;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+    rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+    rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+#myPara {
+  font-family: monospace;
+  font-style: italic;
+  font-size: 16px;
+  font-weight: 700;
+  text-shadow: rgba(106, 255, 0, 0.24) 0px 3px 8px;
+}
+
+#myInputs {
+  width: 298px;
+  height: 42px;
+  border-radius: 4px;
+  outline: none;
+  border: none;
+  font-family: monospace;
+  font-style: italic;
+  padding-left: 6px;
+  font-size: 14px;
+  font-weight: 600;
+  background: -webkit-linear-gradient(#000000, #5100ff, #ffffff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  box-shadow: rgba(192, 30, 30, 0.24) 0px 3px 8px;
+}
+
+#myTextArea {
+  width: 292px;
+  height: 82px;
+  border-radius: 4px;
+  outline: none;
+  border: none;
+  font-family: monospace;
+  font-style: italic;
+  padding-left: 6px;
+  padding-top: 6px;
+  font-size: 14px;
+  font-weight: 600;
+  background: -webkit-linear-gradient(#000000, #5100ff, #ffffff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  box-shadow: rgba(192, 30, 30, 0.24) 0px 3px 8px;
+}
+#btn {
+  width: 148px;
+  height: 34px;
+  background: #ffffff;
+  color: #000000;
+  border: none;
+  border-radius: 6px;
+  font-family: monospace;
+  font-style: italic;
+  font-weight: 600;
+  border: 1px solid;
+  transition: background 0.3s ease-in-out, color 0.3s ease-in-out;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+#btn:hover {
+  background: #000;
+  color: #ffffff;
+  cursor: pointer;
+}
+
+#resultCard {
+  width: 328px;
+  min-height: auto;
+  max-height: 482px;
+  display: flex;
+  background: #ffffff;
+  gap: 10px;
+  flex-direction: column;
+  border-radius: 8px;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+    rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+    rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+#myImage {
+  width: 328px;
+  height: 242px;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+}
+
+#resultHead {
+  background: -webkit-linear-gradient(#000000, #5100ff, #ffffff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-family: monospace;
+  font-style: italic;
+  font-size: 22px;
+  margin-top: 6px;
+  margin-left: 6px;
+}
+
+#myDesc {
+  background: -webkit-linear-gradient(#ffffff, #07a0ff, #fbff00);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-family: monospace;
+  font-style: italic;
+  font-size: 14px;
+  font-weight: 600;
+  margin-top: 6px;
+  margin-left: 6px;
+  word-wrap: break-word; /* Long words ko wrap karega */
+  overflow-wrap: break-word; /* Ensure karega ke text div se bahar na jaye */
+  max-width: 90%; /* Yeh ensure karega ke text container ke andar rahe */
+  white-space: normal; /* Yeh text ko wrap karne dega */
+  line-height: 1.5;
+}
+
+#resultBtn {
+  width: 148px;
+  height: 34px;
+  background: #ffffff;
+  color: #000000;
+  border: none;
+  border-radius: 6px;
+  font-family: monospace;
+  font-style: italic;
+  font-weight: 600;
+  border: 1px solid;
+  transition: background 0.3s ease-in-out, color 0.3s ease-in-out;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  margin-top: 6px;
+  margin-left: 6px;
+}
+
+#resultBtn:hover {
+  background: #000;
+  color: #ffffff;
+  cursor: pointer;
+}
+
+#fullScreenImage {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.8);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+
+#fullImage {
+  max-width: 90%;
+  max-height: 90%;
+  border-radius: 10px;
+  cursor: pointer;
+}
